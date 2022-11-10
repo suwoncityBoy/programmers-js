@@ -1,3 +1,6 @@
+// 다시풀어야함!!
+
+
 function solution(array) {
   // const test = [ ...new Set([1,2,1])]
   // console.log(test)
