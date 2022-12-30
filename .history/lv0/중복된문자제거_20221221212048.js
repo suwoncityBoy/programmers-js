@@ -4,5 +4,5 @@ function solution(my_string) {
 
   const set1 = [...new Set(arr)];
 
-  return set1.join("");
+  return set1.join(""); // poel
 }
