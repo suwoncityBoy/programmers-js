@@ -1,3 +1,4 @@
+// 다른방식의 풀이
 function solution(array) {
   let map = new Map();
   for (let x of array) {
