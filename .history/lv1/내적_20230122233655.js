@@ -15,8 +15,3 @@ function solution(a, b) {
   }
   return sum;
 }
-
-//reduce 로만 풀어본 로직
-function solution(a, b) {
-  return a.reduce((acc, next, i) => (acc += a[i] * b[i]), 0);
-}
