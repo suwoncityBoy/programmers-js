@@ -17,7 +17,7 @@ function solution(num) {
 
 // 다시 푼 풀이
 
-function solution(n) {
+function solution(num) {
   let count = 0;
   // while 무한반복인데 몇번해야될지모를떄 근데 멈추는 건 언제인지알때
   // for 몇번까지 해야하는지 알때
@@ -27,5 +27,5 @@ function solution(n) {
     count++;
     return collatz(n % 2 ? n * 3 + 1 : n / 2);
   };
-  return collatz(n) > 500 ? -1 : count;
+  return collatz(num) > 500 ? -1 : count;
 }
