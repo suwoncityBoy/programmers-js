@@ -1,6 +1,7 @@
 function solution(s) {
   let answer = [];
   let test = s.split(" ");
+
   for (let i = 0; i < test.length; i++) {
     let Upper = test[i].split("");
     for (let j = 0; j < test[i].length; j++) {
@@ -12,5 +13,6 @@ function solution(s) {
     }
     answer.push(Upper.join(""));
   }
+
   return answer.join(" ");
 }
