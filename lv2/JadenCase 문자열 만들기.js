@@ -1,18 +1,18 @@
 function solution(s) {
-  let answer = [];
+  let array = [];
   let test = s.split(" ");
 
   for (let i = 0; i < test.length; i++) {
-    let Upper = test[i].split("");
+    let str = test[i].split("");
     for (let j = 0; j < test[i].length; j++) {
-      if (j == 0) {
-        Upper[j] = Upper[j].toUpperCase();
+      if (j === 0) {
+        str[j] = str[j].toUpperCase();
       } else {
-        Upper[j] = Upper[j].toLowerCase();
+        str[j] = str[j].toLowerCase();
       }
     }
-    answer.push(Upper.join(""));
+    array.push(str.join(""));
   }
 
-  return answer.join(" ");
+  return array.join(" ");
 }
