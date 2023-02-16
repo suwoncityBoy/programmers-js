@@ -5,3 +5,11 @@ function solution(s) {
 
   return minValue + " " + maxValue;
 }
+
+// 다시 푼 풀이
+
+function solution(s) {
+  let array = s.split(" ");
+
+  return `${Math.min(...array)} ${Math.max(...array)}`;
+}
