@@ -1,3 +1,4 @@
-function solution(n) { // 사람수 
-  return n % 7 === 0 ? Math.floor(n / 7) : Math.floor(n / 7) + 1
+function solution(n) {
+  // 사람수
+  return n % 7 === 0 ? Math.floor(n / 7) : Math.floor(n / 7) + 1;
 }
