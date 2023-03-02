@@ -12,10 +12,10 @@ console.log(solution(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
 
 // 다른풀이
 
-// function solution(numbers) {
-//   var answer = 0;
-//   for (i of numbers) {
-//     answer += i
-//   }
-//   return answer / numbers.length
-// }
+function solution(numbers) {
+  var answer = 0;
+  for (i of numbers) {
+    answer += i;
+  }
+  return answer / numbers.length;
+}
