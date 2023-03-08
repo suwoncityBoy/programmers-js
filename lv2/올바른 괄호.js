@@ -22,3 +22,16 @@ function solution(s) {
   }
   return cnt === 0 ? true : false;
 }
+
+// 해결
+function solution(s) {
+  let cnt = 0;
+  let arr = [...s];
+  for (let i = 0; i < s.length; i++) {
+    arr[i] === ")" ? cnt-- : cnt++;
+    if (cnt < 0) {
+      break;
+    }
+  }
+  return cnt === 0 ? true : false;
+}
