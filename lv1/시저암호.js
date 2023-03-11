@@ -20,8 +20,9 @@ function solution(s, n) {
 function solution(s, n) {
   let result = "";
   for (let i = 0; i < s.length; i++) {
-    if (s[i] === " ") result += " ";
-    else {
+    if (s[i] === " ") {
+      result += " ";
+    } else {
       let str = s.charCodeAt(i);
       if (str <= 90) {
         str += n;
