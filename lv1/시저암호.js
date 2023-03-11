@@ -15,3 +15,24 @@ function solution(s, n) {
 
   return result;
 }
+
+//해결
+function solution(s, n) {
+  let result = "";
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === " ") result += " ";
+    else {
+      let str = s.charCodeAt(i);
+      if (str <= 90) {
+        str += n;
+        if (str > 90) str -= 26;
+      } else {
+        str += n;
+
+        if (str > 122) str -= 26;
+      }
+      result += String.fromCharCode(str);
+    }
+  }
+  return result;
+}
