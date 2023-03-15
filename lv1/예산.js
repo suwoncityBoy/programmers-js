@@ -13,13 +13,11 @@ function solution(d, budget) {
 
   for (let el of d) {
     budget -= el;
-
     if (budget < 0) {
       break;
     } else {
       cnt++;
     }
   }
-
   return cnt;
 }
