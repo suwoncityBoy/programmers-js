@@ -9,3 +9,5 @@ function solution(age) {
   let answer = t.reduce((acc, cur) => (acc += obj[cur]), "");
   return answer;
 }
+
+//다른풀이
