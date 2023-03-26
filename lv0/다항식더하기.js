@@ -18,3 +18,5 @@ function solution(polynomial) {
   if (xNum === 0 && num !== 0) return `${num}`;
   if (xNum === 0 && num === 0) return "0";
 }
+
+// 다른문제풀이
