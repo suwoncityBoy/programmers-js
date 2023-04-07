@@ -17,8 +17,16 @@ function solution(age) {
   let an = "";
 
   for (let i = 0; i < ageArr.length; i++) {
-    ans += String.fromCharCode(Number(ageArr[i]) + 97);
+    an += String.fromCharCode(Number(ageArr[i]) + 97);
   }
 
   return an;
+}
+
+function solution(age) {
+  return age
+    .toString()
+    .split("")
+    .map((v) => "abcdefghij"[v])
+    .join("");
 }
